@@ -1,0 +1,35 @@
+
+
+.header__inner{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.header__logo-nov{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 387px;
+}
+
+.header__respon-btn{
+  background-color: transparent;
+  border: none;
+  display: none;
+}
+
+@include breakpoint-down(620px){
+  .nav-header{
+    display: none;
+  }
+
+  .btn-header{
+    display: none;
+  }
+
+  .header__respon-btn{
+    display: block;
+  }
+}
+
